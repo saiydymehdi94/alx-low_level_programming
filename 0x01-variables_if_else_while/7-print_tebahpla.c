@@ -1,16 +1,16 @@
 #include <stdio.h>
 
 /**
- * main - prints the lowercase alphabet in reverse
+ * main - prints the lowercase alphabet in reverse.
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char i;
+	char c;
 
-	for (i = 'z'; i <= 'a'; i--)
-		putchar(i);
+	for (c = 'z'; c >= 'a'; c--)
+		putchar(c);
 
 	putchar('\n');
 
