@@ -1,34 +1,20 @@
+#include <stdio.h>
 #include "main.h"
-
 /**
- * print_triangle -  checks for checks for a digit (0 through 9).
- * @size: size -  Variable
- * Return: Always 0.
- */
-void print_triangle(int size)
-{
-	int x, y;
+ * main - prints the largest prime factor of 612852475143
+ * Bwave ICT / Bright Daniel
+ * Return: always 0
+ **/
 
-	if (size > 0)
+int main(void)
+{
+	unsigned long int i, n = 612852475143;
+
+	for (i = 3; i < 782849; i = i + 2)
 	{
-		for (x = 1; x <= size; x++)
-		{
-			for (y = 1; y <= size; y++)
-			{
-				if (y <= size - x)
-				{
-					_putchar(' ');
-				}
-				else
-				{
-					_putchar('#');
-				}
-			}
-			_putchar('\n');
-		}
+		while ((n % i == 0) && (n != i))
+			n = n / i;
 	}
-	else
-	{
-		_putchar('\n');
-	}
+	printf("%lu\n", n);
+	return (0);
 }
