@@ -8,15 +8,16 @@
 
 void print_chessboard(char (*a)[8])
 {
-	int i, j;
+	int i = 0;
+	int j;
 
-	for (i = 0; i < 8; i++)
+	while (i < 8)
 	{
 		for (j = 0; j < 8; j++)
 		{
-			printf("%c ", a[i][j]);
+			_putchar(a[i][j]);
 		}
-
-		printf("\n");
+		_putchar('\n');
+		i++;
 	}
 }
