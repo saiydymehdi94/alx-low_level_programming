@@ -2,7 +2,7 @@
 
 /**
  * _strlen_recursion -Return the length of a staring
- * @s: char 
+ * @s: The staring 
  * Return: Always 0 or 1 + _strlen_recursion(s+1)
  */
 int _strlen_recursion(char *s)
