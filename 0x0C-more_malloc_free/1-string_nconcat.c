@@ -6,14 +6,13 @@
  * string_nconcat -concatenates n bytes a string to another string.
  * @s1: string to append to
  * @s2: string to concatenates from
- * @n: number of bytes
- * Retuen: pointer to resulting string
+ * @n: number of bytes from s2 to concatenate to s1
+ * Return: pointer to the resulting string
  */
-
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int len_s1, len_s2;
-	char *m;
+	char *result;
 
 	if (s1 == NULL)
 	{
@@ -31,14 +30,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		n = len_s2;
 	}
-	m = malloc(len_s1 + n + 1);
+	result = malloc(len_s1 + n + 1);
 
-	if (m == NULL)
+	if (result == NULL)
 	{
 		return (NULL);
 	}
-	memcpy(m, s1, len_s1);
-	memcpy(m + len_s1, s2, n);
-	m[len_s1 + n] = '\0';
-	return (m);
+	memcpy(result, s1, len_s1);
+	memcpy(result + len_s1, s2, n);
+	result[len_s1 + n] = '\0';
+	return (result);
 }
