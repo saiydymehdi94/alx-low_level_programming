@@ -2,9 +2,9 @@
 #include "function_pointers.h"
 
 /**
- * array_iterator - executes a function given
+ * array_iterator -prints each elem on new
  * @array: array
- * @size: is the size of the array
+ * @size: how many ele to print
  * @action:  pointer to the function you need to use
  * Return: nothing
  */
@@ -15,7 +15,7 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 
 	if ( array == NULL)
 		return;
-	else if (action == 0)
+	else if (action == NULL)
 		return;
 
 	for (x = 0; x < size; x++)
