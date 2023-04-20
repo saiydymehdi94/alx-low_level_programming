@@ -1,10 +1,13 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
+
 /**
  * sum_them_all -print the sum of all its parameters.
- * @n: number
- * @...: the integer to sum
- * Return: Always s
+ * @n: number of parameter passed to the function
+ * @...: a variable of parametre to calculate the sum of.
+ *
+ * Return: if n == 0 - 0
+ *
  */
 int sum_them_all(const unsigned int n, ...)
 {
