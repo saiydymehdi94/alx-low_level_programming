@@ -9,5 +9,7 @@ int op_sub(int a, int b);
 int op_mul(int a, int b);
 int op_div(int a, int b);
 int op_mod(int a, int b);
+ int main(int __attribute__((__unused__)) argc, char *argv[]);
+void array_iterator(int *array, size_t size, void (*action)(int));
 
 #endif
