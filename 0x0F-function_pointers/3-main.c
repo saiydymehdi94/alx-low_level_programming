@@ -4,10 +4,10 @@
 #include <stdio.h>
 #include "3-calc.h"
 /**
- * main __attribute__ -prints the result of simple operations.
- * @argc: number
- * @argv: array
- * return: Always NULL
+ * main -prints the result of simple operations.
+ * @argc: number of aarguments supplied to the program
+ * @argv: array of pointers
+ * return: Always 0
  */
 int main(int __attribute__((__unused__)) argc, char *argv[])
 {
