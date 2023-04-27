@@ -1,16 +1,14 @@
 #ifndef LISTS_H
 #define LISTS_H
 #include <stddef.h>
-
 /**
  * struct list_s - singly
  * @str: string
  * @len: the length of the string
  * @next: pointer
- *
+ * Description: singly linked
  * alx
  */
-
 typedef struct list_s
 {
 	char *str;
