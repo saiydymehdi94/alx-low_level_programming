@@ -5,7 +5,7 @@
 /**
  * add_node -
  * @head: the double pointer
- * @str: the string 
+ * @str: the string
  *
  * Return: the address of the new element, or NULL if it failed
  */
