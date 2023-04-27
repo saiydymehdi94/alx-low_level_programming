@@ -3,6 +3,7 @@
 #include <stddef.h>
 
 /**
+ * struct list_s - singly
  * @str: string
  * @len: the length of the string
  * @next: pointer
