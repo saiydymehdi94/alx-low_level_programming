@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
- * add_node -
+ * add_node -function
  * @head: the double pointer
  * @str: the string
  *
