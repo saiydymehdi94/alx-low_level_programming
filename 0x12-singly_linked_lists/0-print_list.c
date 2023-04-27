@@ -4,12 +4,13 @@
 /**
  * print_list -the function
  * @h: pointer
+ *
  * Return: the number of nodes
  */
 
 size_t print_list(const list_t *h)
 {
-	size_t w = 0;
+	size_t count = 0;
 	while (h != NULL)
 	{
 		if (h-> str == NULL)
@@ -20,8 +21,8 @@ size_t print_list(const list_t *h)
 		{
 			printf("[%d] %s\n", h->len, h->str);
 		}
-		w++;
+		count++;
 		h = h->next;
 	}
-	return (w);
+	return (count);
 }
