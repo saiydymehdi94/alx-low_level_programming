@@ -2,7 +2,7 @@
 
 void print_fun(void)__attribute__((constructor));
 /**
- * printf_fun _function
+ * printf_fun -function
  * function exucuted
  */
 
