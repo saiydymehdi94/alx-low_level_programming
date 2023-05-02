@@ -3,10 +3,10 @@
 #include <stdlib.h>
 
 /**
- * pop_listint -function that deletes the head node of a listint_t
- * @head: pointer
+ * pop_listint - Deletes the head node of  a listint_t linked list
+ * @head: the pointer
  *
- * Retun: the head node s data (n), or if the linked list is empty
+ * REturn: the head node s data (n), or O if the list is empty.
  */
 int pop_listint(listint_t **head)
 {
@@ -14,7 +14,6 @@ int pop_listint(listint_t **head)
 	int n;
 
 	if (*head == NULL)
-	
 		return (0);
 
 	temp = *head;
