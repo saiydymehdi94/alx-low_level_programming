@@ -1,10 +1,10 @@
 #include "lists.h"
 
 /**
- * find_listint_loop - the write function
- * @head: input
- * Return: addition of the node where the loop start.
- * or NULL if there is no loop function.
+ * free_listint_safe - frees a function
+ * @h: pointer t
+ *
+ * Return: number of elements in the freed list
  */
 size_t free_listint_safe(listint_t **h)
 {
@@ -33,6 +33,7 @@ size_t free_listint_safe(listint_t **h)
 			break;
 		}
 	}
+
 	*h = NULL;
 
 	return (len);
