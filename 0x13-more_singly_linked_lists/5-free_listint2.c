@@ -1,6 +1,6 @@
 #include "lists.h"
 #include <stdlib.h>
-
+#include <stddef.h>
 /**
  * free_listint2 -function
  * @head: pointer
@@ -12,7 +12,7 @@ void free_listint2(listint_t **head)
 	if (head == NULL)
 		return;
 
-	while (head == NULL)
+	while (head != NULL)
 	{
 		curr = *head;
 		*head = curr->next;
