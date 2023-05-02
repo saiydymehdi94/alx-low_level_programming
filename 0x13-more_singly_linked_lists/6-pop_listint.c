@@ -5,6 +5,7 @@
 /**
  * pop_listint -function that deletes the head node of a listint_t
  * @head: pointer
+ *
  * Retun: the head node s data (n), or if the linked list is empty
  */
 int pop_listint(listint_t **head)
