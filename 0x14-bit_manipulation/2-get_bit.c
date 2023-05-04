@@ -5,7 +5,7 @@
 /**
  * get_bit - returns function
  * @n: number
- * @index: the index 
+ * @index: the index
  *
  * Return: the value of index index, or -1 if an error occurred.
  */
