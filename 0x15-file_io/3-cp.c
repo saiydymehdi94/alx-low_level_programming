@@ -5,7 +5,7 @@
 #define BUFFER_SIZE 1024
 /**
  * create_buff - the allocates
- * @file: name 
+ * @file: name
  * Return: pointer to the newly-allocated buffer.
  */
 char *create_buff(char *file)
